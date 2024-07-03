@@ -14,7 +14,7 @@ Para la primera clase Clientes existe un boton para directamente poder registrar
 El proyecto tambien cuenta con una funcion para "Buscar Productos", el cual abre un formulario para buscar directamente en la base de datos algun producto a disposicion.
 Por ulitmo, cuenta con una funcion de "Acerca de" donde se muestran datos mas informativos de la pagina y una opcion de "Contacto" la cual busca facilitar la forma de comunicarse con el propio local.
 
-
+##Que hacer con esto?
 La idea es Continuar con este proyecto asi poder ir mejorandolo cada vez mas, cualquier recomendacion acerca de como manejar mejor la pagina o cualquier funcion que se crea necesaria sera recibida y tomada en cuenta para mejorar el proyecto.
 
 
