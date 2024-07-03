@@ -1,0 +1,32 @@
+<!-- Html Clase Productos-->
+{%  extends "administracion/index.html" %}
+
+
+{% block titulo %}
+<header class="display-4 fw-bolder text-white mb-2 text-center w-100">Productos</header>
+{% endblock titulo %}
+
+
+{% block contenido %}   
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre de Producto</th>
+            <th>Stock del Producto</th>
+            <th>Marca del Prodcuto</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for c in productos  %}
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.nombre }}</td>
+            <td>{{c.stock}}</td>
+            <td>{{ c.marca }}</td>
+            
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}

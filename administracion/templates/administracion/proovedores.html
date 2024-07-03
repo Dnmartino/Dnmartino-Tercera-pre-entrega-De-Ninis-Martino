@@ -1,0 +1,29 @@
+<!-- Html Clase Proovedores-->
+{%  extends "administracion/index.html" %}
+
+
+{% block titulo %}
+<header class="display-4 fw-bolder text-white mb-2 text-center w-100">Proovedores</header>
+{% endblock titulo %}
+
+
+{% block contenido %}   
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre del Proovedor</th>
+            <th>Productos del Proovedor</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for c in proovedores  %}
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.nombre }}</td>
+            <td>{{ c.producto }}</td>
+
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}

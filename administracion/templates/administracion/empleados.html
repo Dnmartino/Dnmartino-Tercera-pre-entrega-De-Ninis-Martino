@@ -1,0 +1,30 @@
+<!-- Html Clase Empleados-->
+{% extends "administracion/index.html" %}
+
+{% block titulo %}
+<header class="display-4 fw-bolder text-white mb-2 text-center w-100">Empleados</header>
+{% endblock titulo %}
+
+{% block contenido %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre del Empleado</th>
+            <th>Apellido del Empleado</th>
+            <th>Oficio del Empleado</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for c in empleados  %}
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.nombre }}</td>
+            <td>{{ c.apellido }}</td>
+            <td>{{c.oficio}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock contenido %}
+
